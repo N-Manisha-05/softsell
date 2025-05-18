@@ -136,7 +136,7 @@ export default function ContactForm() {
 
             <div>
               <h3>Office Hours</h3>
-              <p>Monday - Friday: 9am - 5pm EST</p>
+              <p>Monday - Friday: 9am - 5pm IST</p>
               <p>Weekend: Closed</p>
             </div>
           </div>
