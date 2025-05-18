@@ -1,0 +1,56 @@
+.hheroSection {
+  background-color: var(--bg--hero);
+  color: var(--hero-text);
+  text-align: center;
+  padding: 5rem 1rem; /* py-20 px-4 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hheroTitle {
+  font-weight: 700;
+  font-size: 2.25rem; /* text-4xl */
+  margin-bottom: 1rem;
+}
+
+/* Responsive typography */
+@media (min-width: 768px) {
+  .hheroTitle {
+    font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+.hheroText {
+  font-size: 1.125rem; /* text-lg */
+  margin-bottom: 1.5rem;
+}
+
+.hquoteButton {
+  background-color: var(--hero-button-bg);
+  color: var(--hero-button-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* rounded-full */
+  font-weight: 600;
+  border: 1px white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hquoteButton:hover {
+  background-color: var(--hero-button-hover);
+}
+
+/* 📱 Mobile scaling */
+@media (max-width: 480px) {
+  .hheroTitle {
+    font-size: 1.75rem;
+  }
+
+  .hheroText {
+    font-size: 1rem;
+  }
+
+  .hquoteButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+}

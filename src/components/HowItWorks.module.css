@@ -1,0 +1,62 @@
+.section {
+    padding: 4rem 1rem;
+    background-color: var(--bg--hiw);
+    color: var(--hiw-text);
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Medium screens and up */
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Small screens */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .card {
+    background-color: var(--card--hiw);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.2s ease, background-color 0.3s ease;
+    cursor: default;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 6px rgb(0 0 0 / 0.15);
+  }
+  
+  .emoji {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--hiw-emoji);
+  }
+  
+  .stepTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  

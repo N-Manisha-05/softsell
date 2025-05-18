@@ -1,0 +1,52 @@
+:root {
+  --bg:#ffffff;  
+  --bg--nav:#f3a5a5;
+  --bg--hero: #ebb6b6;
+  --bg--hiw: #ebb6b6;
+  --card--hiw:#f3a5a5;
+  --bg--wcu:#ebb6b6;
+  --card--wcu:#f3a5a5;
+  --bg--wcs:#ebb6b6;
+  --card--wcs:#f3a5a5;
+  --card--c:#f3a5a5;
+  --text--c:#727171;
+  --button--c:#d45b5b;
+  --text: #111827;         
+  --card-bg: #ffffff;      
+  --card-border: #e98484;  
+  --primary: #2563eb;      
+  --primary-hover: #1d4ed8;
+  --secondary: #fbbf24;   
+  --secondary-hover: #d97706;
+  --button--to:#c27a7a;
+}
+
+.dark {
+  --bg: #1a2338; 
+  --bg--nav:#1a2338;
+  --bg--hero:#1a2338 ;       
+  --bg--hiw:#1a2338; 
+  --card--hiw:#053f47; 
+  --bg--wcu:#172536;
+  --card--wcu:#0f4247;
+  --bg--wcs:#172536;
+  --card--wcs:#0f4247;
+  --card--c:#172536;
+  --text--c:#838282;
+  --button--c:#10263b;
+  --text: #e0e7ff;        
+  --card-bg: #1e293b;    
+  --card-border: #60a5fa;  
+  --primary: #3b82f6;      
+  --primary-hover: #2563eb;
+  --secondary: #f87171;    
+  --secondary-hover: #ef4444;
+  --button--to:#3f4657;
+}
+
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}

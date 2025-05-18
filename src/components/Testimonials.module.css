@@ -1,0 +1,59 @@
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: var(--bg--wcs);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .card {
+    background-color: var(--card--wcs);
+    color: var(--text-color);
+    border: 1px solid var(--card-border);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.2s ease, background-color 0.3s ease;
+    cursor: default;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 6px rgb(0 0 0 / 0.15);
+  }
+  
+  .quote {
+    font-style: italic;
+    color: var(--quote-color);
+    margin-bottom: 1rem;
+  }
+  
+  .name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .roleCompany {
+    font-size: 0.875rem;
+    color: var(--role-color);
+  }
+  
