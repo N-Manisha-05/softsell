@@ -1,56 +1,74 @@
 .hheroSection {
   background-color: var(--bg--hero);
-  color: var(--hero-text);
+  color: var(--text);
   text-align: center;
-  padding: 5rem 1rem; /* py-20 px-4 */
+  padding: 6rem 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hheroTitle {
-  font-weight: 700;
-  font-size: 2.25rem; /* text-4xl */
-  margin-bottom: 1rem;
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
-/* Responsive typography */
+.icon {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.hheroTitle {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: var(--text);
+}
+
 @media (min-width: 768px) {
   .hheroTitle {
-    font-size: 3rem; /* md:text-5xl */
+    font-size: 3.5rem;
   }
 }
 
 .hheroText {
-  font-size: 1.125rem; /* text-lg */
-  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2.25rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text--c);
 }
 
 .hquoteButton {
-  background-color: var(--hero-button-bg);
-  color: var(--hero-button-text);
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px; /* rounded-full */
+  background-color: var(--button--to);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
   font-weight: 600;
-  border: 1px white;
+  font-size: 1rem;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .hquoteButton:hover {
-  background-color: var(--hero-button-hover);
+  background-color: var(--secondary-hover);
+  transform: scale(1.05);
 }
 
-/* 📱 Mobile scaling */
+/* 📱 Responsive Tweaks */
 @media (max-width: 480px) {
   .hheroTitle {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .hheroText {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .hquoteButton {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.5rem;
     font-size: 0.95rem;
   }
 }

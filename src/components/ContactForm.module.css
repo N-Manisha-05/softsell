@@ -1,14 +1,15 @@
-.csection {
-  background-color: var(--bg--wcs);
+/* .csection {
+  background-color: var(--bg--hero);
   padding: 4rem 1rem;
   color: var(--text);
 }
 
 .ctitle {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--primary);
 }
 
 .form {
@@ -18,50 +19,53 @@
   flex-direction: column;
   gap: 1rem;
   background-color: var(--card--c);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-  color: var(--text--c);
-}
-
-.cinput,.ctextarea{
-  width: 96%;
+  padding: 2rem;
+  border-radius: 0.75rem;
   border: 1px solid var(--card-border);
-  padding: 0.75rem;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-  font-family: inherit;
-  background-color: var(--bg--hero);
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.08);
   color: var(--text--c);
-
 }
+
+.cinput,
+.ctextarea,
 .cselect {
   width: 100%;
   border: 1px solid var(--card-border);
-  padding: 0.75rem;
-  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
   font-size: 1rem;
   font-family: inherit;
-  background-color: var(--bg--hero);
+  background-color: var(--card--wcs);
   color: var(--text--c);
+  transition: border-color 0.2s ease;
+}
+
+.cinput:focus,
+.ctextarea:focus,
+.cselect:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); 
 }
 
 .cbutton {
   background-color: var(--button--c);
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.375rem;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   border: none;
 }
 
 .cbutton:hover {
-  background-color: var(--button--c);
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
 }
 
-/* 📱 Responsive for small devices */
+
 @media (max-width: 480px) {
   .form {
     padding: 1rem;
@@ -71,11 +75,134 @@
   .cselect,
   .ctextarea {
     font-size: 0.9rem;
-    padding: 0.6rem;
+    padding: 0.6rem 0.9rem;
   }
 
   .cbutton {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
+  }
+} */
+
+.csection {
+  padding: 4rem 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--text); /* text color adapts to mode */
+  background-color: var(--bg); /* background adapts to mode */
+}
+
+.contactWrapper {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.contactInfo {
+  flex: 1 1 40%;
+  min-width: 280px;
+}
+
+.ctitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.infoText {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.contactDetails h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.contactDetails p,
+.contactDetails a {
+  margin: 0;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.contactLink:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Right side */
+.form {
+  flex: 1 1 55%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.cinput,
+.cselect,
+.ctextarea {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--card-border);
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text);
+  background-color: var(--card-bg);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cinput:focus,
+.cselect:focus,
+.ctextarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.cbutton {
+  background-color: var(--primary);
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cbutton:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactWrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contactInfo,
+  .form {
+    flex: 1 1 100%;
   }
 }

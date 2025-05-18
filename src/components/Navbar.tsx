@@ -1,6 +1,8 @@
 "use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -8,20 +10,19 @@ export default function Navbar() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark" || (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    if (
+      savedTheme === "dark" ||
+      (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
       setIsDark(true);
       document.documentElement.classList.add("dark");
     }
   }, []);
 
   const toggleTheme = () => {
-    if (isDark) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
+    const newTheme = isDark ? "light" : "dark";
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    localStorage.setItem("theme", newTheme);
     setIsDark(!isDark);
   };
 
@@ -35,7 +36,7 @@ export default function Navbar() {
         <Link href="#why-us">Why Choose Us</Link>
         <Link href="#how-it-works">How It Works</Link>
         <button onClick={toggleTheme} className={styles.toggleBtn} aria-label="Toggle Theme">
-          {isDark ? "🌞" : "🌙"}
+          {isDark ? <FaSun /> : <FaMoon />}
         </button>
       </div>
     </nav>

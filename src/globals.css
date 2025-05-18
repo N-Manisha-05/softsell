@@ -1,19 +1,19 @@
-:root {
+/* :root {
   --bg:#ffffff;  
-  --bg--nav:#f3a5a5;
-  --bg--hero: #ebb6b6;
-  --bg--hiw: #ebb6b6;
-  --card--hiw:#f3a5a5;
-  --bg--wcu:#ebb6b6;
-  --card--wcu:#f3a5a5;
-  --bg--wcs:#ebb6b6;
-  --card--wcs:#f3a5a5;
-  --card--c:#f3a5a5;
+  --bg--nav:#ffffff;
+  --bg--hero: #f1eeee;
+  --bg--hiw: #ffffff;
+  --card--hiw:#f1eeee;
+  --bg--wcu:#f1eeee;
+  --card--wcu:#ffffff;
+  --bg--wcs:#ffffff;
+  --card--wcs:#f1eeee;
+  --card--c:#ffffff;
   --text--c:#727171;
-  --button--c:#d45b5b;
+  --button--c:#a7cbd6;
   --text: #111827;         
   --card-bg: #ffffff;      
-  --card-border: #e98484;  
+  --card-border: #f3eded;  
   --primary: #2563eb;      
   --primary-hover: #1d4ed8;
   --secondary: #fbbf24;   
@@ -24,16 +24,16 @@
 .dark {
   --bg: #1a2338; 
   --bg--nav:#1a2338;
-  --bg--hero:#1a2338 ;       
+  --bg--hero:#252e44 ;       
   --bg--hiw:#1a2338; 
-  --card--hiw:#053f47; 
-  --bg--wcu:#172536;
-  --card--wcu:#0f4247;
-  --bg--wcs:#172536;
-  --card--wcs:#0f4247;
+  --card--hiw:#252e44; 
+  --bg--wcu:#252e44;
+  --card--wcu:#1a2338;
+  --bg--wcs:#1a2338;
+  --card--wcs:#252e44;
   --card--c:#172536;
   --text--c:#838282;
-  --button--c:#10263b;
+  --button--c:#0f304e;
   --text: #e0e7ff;        
   --card-bg: #1e293b;    
   --card-border: #60a5fa;  
@@ -44,6 +44,60 @@
   --button--to:#3f4657;
 }
 
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+} */
+
+
+
+:root {
+  --bg: #fdfdfd;  
+  --bg--nav: #ffffff;
+  --bg--hero: #f0f4f8;
+  --bg--hiw: #fdfdfd;
+  --card--hiw: #eaf4fc;
+  --bg--wcu: #f3faff;
+  --card--wcu: #ffffff;
+  --bg--wcs: #ffffff;
+  --card--wcs: #f9fafb;
+  --card--c: #ffffff;
+  --text--c: #444e5c;
+  --button--c: #4f9dff;
+  --text: #1f2937;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --primary: #3b82f6; /* blue-500 */
+  --primary-hover: #2563eb; /* blue-600 */
+  --secondary: #f59e0b; /* amber-500 */
+  --secondary-hover: #d97706; /* amber-600 */
+  --button--to: #ffafcc; /* light coral pink */
+}
+
+.dark {
+  --bg: #111827;
+  --bg--nav: #1f2937;
+  --bg--hero: #1e293b;
+  --bg--hiw: #111827;
+  --card--hiw: #1e293b;
+  --bg--wcu: #1e293b;
+  --card--wcu: #111827;
+  --bg--wcs: #111827;
+  --card--wcs: #1e293b;
+  --card--c: #1c1f2b;
+  --text--c: #d1d5db;
+  --button--c: #38bdf8; /* sky-400 */
+  --text: #f9fafb;
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --primary: #60a5fa; /* blue-400 */
+  --primary-hover: #3b82f6; /* blue-500 */
+  --secondary: #fca5a5; /* red-300 */
+  --secondary-hover: #f87171; /* red-400 */
+  --button--to: #4b5563; /* gray-600 */
+}
 
 body {
   background-color: var(--bg);
