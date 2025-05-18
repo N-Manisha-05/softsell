@@ -1,55 +1,3 @@
-/* :root {
-  --bg:#ffffff;  
-  --bg--nav:#ffffff;
-  --bg--hero: #f1eeee;
-  --bg--hiw: #ffffff;
-  --card--hiw:#f1eeee;
-  --bg--wcu:#f1eeee;
-  --card--wcu:#ffffff;
-  --bg--wcs:#ffffff;
-  --card--wcs:#f1eeee;
-  --card--c:#ffffff;
-  --text--c:#727171;
-  --button--c:#a7cbd6;
-  --text: #111827;         
-  --card-bg: #ffffff;      
-  --card-border: #f3eded;  
-  --primary: #2563eb;      
-  --primary-hover: #1d4ed8;
-  --secondary: #fbbf24;   
-  --secondary-hover: #d97706;
-  --button--to:#c27a7a;
-}
-
-.dark {
-  --bg: #1a2338; 
-  --bg--nav:#1a2338;
-  --bg--hero:#252e44 ;       
-  --bg--hiw:#1a2338; 
-  --card--hiw:#252e44; 
-  --bg--wcu:#252e44;
-  --card--wcu:#1a2338;
-  --bg--wcs:#1a2338;
-  --card--wcs:#252e44;
-  --card--c:#172536;
-  --text--c:#838282;
-  --button--c:#0f304e;
-  --text: #e0e7ff;        
-  --card-bg: #1e293b;    
-  --card-border: #60a5fa;  
-  --primary: #3b82f6;      
-  --primary-hover: #2563eb;
-  --secondary: #f87171;    
-  --secondary-hover: #ef4444;
-  --button--to:#3f4657;
-}
-
-
-body {
-  background-color: var(--bg);
-  color: var(--text);
-  transition: background-color 0.3s, color 0.3s;
-} */
 
 
 
@@ -74,6 +22,8 @@ body {
   --secondary: #f59e0b; /* amber-500 */
   --secondary-hover: #d97706; /* amber-600 */
   --button--to: #ffafcc; /* light coral pink */
+  --section-bg: #f3faff;
+  --primary--mcw:#579dd6;
 }
 
 .dark {
@@ -97,6 +47,8 @@ body {
   --secondary: #fca5a5; /* red-300 */
   --secondary-hover: #f87171; /* red-400 */
   --button--to: #4b5563; /* gray-600 */
+  --section-bg: #1e293b;
+  --primary--mcw:#344663;
 }
 
 body {

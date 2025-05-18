@@ -1,73 +1,104 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--card-bg);
-    color: var(--text);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-bg);
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.brand a {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.brand a:hover {
+  color: var(--primary-hover);
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: var(--primary);
+}
+
+.toggleBtn {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.toggleBtn:hover {
+  color: var(--primary);
+}
+
+/* Hamburger menu button (hidden by default) */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
   }
-  
-  .brand a {
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: var(--primary);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .brand a:hover {
-    color: var(--primary-hover);
-  }
-  
+
   .links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--card-bg);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    display: none;
+  }
+
+  .links.active {
     display: flex;
-    gap: 1.5rem;
-    align-items: center;
   }
-  
-  .links a {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--text);
-    transition: color 0.3s;
-  }
-  
-  .links a:hover {
-    color: var(--primary);
-  }
-  
+
+  .links a,
   .toggleBtn {
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: color 0.3s;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
   }
-  
-  .toggleBtn:hover {
-    color: var(--primary);
+
+  .brand a {
+    font-size: 1.5rem;
   }
-  
-  /* Small screens */
-  @media (max-width: 640px) {
-    .links {
-      gap: 1rem;
-      font-size: 0.9rem;
-    }
-  
-    .brand a {
-      font-size: 1.5rem;
-    }
-  
-    .toggleBtn {
-      font-size: 1.1rem;
-    }
+
+  .toggleBtn {
+    font-size: 1.1rem;
   }
-  
+}

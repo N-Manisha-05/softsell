@@ -7,6 +7,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import MockChatWidget from "../components/MockChatWidget";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <HowItWorks />
       <WhyChooseUs />
       <Testimonials />
+      <MockChatWidget/>
       <ContactForm />
       <Footer/>
     </main>
